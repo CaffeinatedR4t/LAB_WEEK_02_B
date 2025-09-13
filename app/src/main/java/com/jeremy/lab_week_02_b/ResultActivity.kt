@@ -25,7 +25,6 @@ class ResultActivity : AppCompatActivity() {
 
             try {
                 backgroundScreen.setBackgroundColor(Color.parseColor("#$colorCode"))
-
                 val resultMessage = findViewById<TextView>(R.id.color_code_result_message)
                 resultMessage.text = getString(R.string.color_code_result_message, colorCode?.uppercase())
             } catch (ex: IllegalArgumentException) {
